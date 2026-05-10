@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width= <device-width>, initial-scale=1.0" />
+  <meta name="viewport" content="width= device-width, initial-scale=1.0" />
   <title>Personal Portfolio</title>
   <link rel="stylesheet" href="port.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -17,147 +17,254 @@
         <h1 id="logo">VK</h1>
       </div>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Resume</li>
-        <li>Contact</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills-section">Skills</a></li>
+        <!-- <li><a href="#projects-section">Projects</a></li> -->
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <div class="hero">
-      <div class="left">
-        <h1>Hey there, <br> I'm Vaibhav Khugshal</h1>
-        <h3>Frontend Developer</h3>
-        <p>Passionate Frontend Developer crafting responsive and engaging user interfaces<br>
-          with a focus on performance and accessibility.</p>
-        <div class="capsule">
-            <!-- linkedin -->
-            <a href="https://www.linkedin.com/in/Vaibhav Khugshal" target="_blank">
-              <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <!-- instagram -->
-            <a href="https://www.instagram.com/vaibhavkhugshal_95049" target="_blank">
-              <i class="fab fa-instagram fa-2x"></i>
-            </a>
-            <!-- GitHub -->
-            <a href="https://github.com/vaibhavkhugshal" target="_blank">
-              <i class="fab fa-github fa-2x"></i>
-            </a>
-        </div>
-        <button id="btn-explore" type="button">Explore More</button>
-      </div>
-      <div class="right">
-        <img src="compressed img.jpg" alt="Picture">
-      </div>
-    </div>
   </header>
 
-  <main>
+  <!---------- hero section ------------>
 
-    <h1 id="mainaboutme">About Me</h1>
+  <section id="home">
+
+    <div class="hero">
+      <div class="left">
+
+        <div class="hero-intro">
+          <h1>Hi There, <br>I'm Vaibhav Khugshal</h1>
+          <h3>Frontend Developer</h3>
+          <p>Passionate Frontend Developer crafting responsive and <br> engaging user interfaces
+            with a focus on performance <br>and accessibility.</p>
+            <div class="capsule">
+              <!-- linkedin -->
+              <a id="linkedin" href="https://www.linkedin.com/in/Vaibhav Khugshal" target="_blank"> <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <!-- instagram -->
+              <a id="instagram" href="https://www.instagram.com/vaibhavkhugshal_95049" target="_blank"> <i
+                class="fab fa-instagram fa-2x"></i>
+              </a>
+              <!-- GitHub -->
+              <a id="git" href="https://github.com/vaibhavkhugshal" target="_blank"> <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+            
+            <div class="button">
+              <a href="#about" class="btn" >Explore More </a>
+              <a href="#resume" download class="btn">Resume</a>
+            </div>
+          </div>
+        </div>
+
+      <div class="right">
+        <img src="assets/WhatsApp Image 2025-08-28 at 22.32.26_4fb183d8.jpg" alt="Picture">
+      </div>
+    </div>
+
+  </section>
+
+  <!------------------ about section ---------------->
+  <section id="about">
+
+    <h1>About Me</h1>
 
     <div class="about">
 
       <div class="mainleft">
-        <img src="compressed img.jpg" alt="Picture">
+        <img src="assets/WhatsApp Image 2025-08-28 at 22.32.26_4fb183d8.jpg" alt="Picture">
       </div>
 
       <div class="mainright">
-        <p>Hello! I'm a passionate and motivated beginner frontend web developer who enjoys turning ideas into visually
-          appealing
-          and interactive websites. I'm currently learning and building projects using HTML, CSS, and JavaScript to
-          strengthen my
-          skills.</p>
-
-        <p>I’m focused on writing clean, responsive code and continuously improving through hands-on practice. My goal
-          is to grow
-          as a developer, contribute to real-world projects, and eventually master modern frameworks like React.</p>
-
-        <p>When I'm not coding, I enjoy exploring design trends, reading tech blogs, and experimenting with new web
-          tools and
-          animations.</p>
+        <h3>I'm Vaibhav Khugshal</h3>
+        <p id="">Full Stack Developer</p>
+        <p>Hello! I'm a passionate and motivated beginner web developer <br>
+          who enjoys turning ideas into visually appealing
+          and interactive <br> websites. <br>
+        </p>
+        <p>My goal is to grow as a developer, contribute to real-world projects, <br> 
+          and eventually master modern frameworks like React.
+        </p>
+        <p id="email">Email: vaibhavkhugshal010@gmail.com</p>
       </div>
 
     </div>
 
+  </section>
 
-    <div class="skills">
-      <h1 id="mainskills">Skills</h1>
-      <p>Here are some of my technical skills </p>
-      <div class="skill-ul">
-        <ul>
-          <li> <b>Frontend:</b> HTML, CSS, JavaScript, React</li>
-          <li> <b>Backend(learning): </b> Node.js, Express</li>
-          <li> <b>Programming Language: </b> C, C++, Java, Python</li>
-          <li> <b>Tools: </b> Git, Git Hub, VS Code, Figma</li>
-        </ul>
+  <!-----------------education section----------------->
+
+  <section id="education">
+    <div class="education-section">
+      <h1>My Education</h1>
+
+      <!-- Card 1 -->
+      <div class="edu-card">
+        <img src="assets/college.jpg" alt="College Image" class="edu-img-uni">
+
+        <div class="edu-content">
+          <h2>Bachelor Of Technology In Computer Science Engineering</h2>
+          <p class="edu-sub">Uttaranchal Institute of Technology | Uttaranchal University</p>
+          <p class="edu-date"><span>Pursuing</span></p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="edu-card">
+        <img src="assets/school.jpg" alt="School Image" class="edu-img-scl">
+
+        <div class="edu-content">
+          <h2>Intermediate </h2>
+          <p class="edu-sub">Rohit Aggrawal Saraswati Vidya Mandir | UBSE</p>
+          <p class="edu-date">2023 | <span>Completed</span></p>
+        </div>
       </div>
 
     </div>
+  </section>
+
+
+
+  <!------------------ skills section ------------------>
+  <section id="skills-section">
+    <h1>Skills</h1>
+
+    <div class="skills-container">
+
+      <div class="skill-card">
+        <img src="assets/html.png" alt="HTML">
+        <p>HTML</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/css.png" alt="CSS">
+        <p>CSS</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/javascript.png" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/react.png" alt="React">
+        <p>ReactJS</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/java.png" alt="Java">
+        <p>Java</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/mysql.png" alt="SQL">
+        <p>MySQL</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/git.png" alt="git">
+        <p>Git</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/github.webp" alt="SQL">
+        <p>GitHub</p>
+      </div>
+      <div class="skill-card">
+        <img src="assets/nodejs.png" alt="node">
+        <p>Node JS</p>
+      </div>
     </div>
+
+  </section>
+
+  <!-----------Projects section ----------->
+  <!-- <section id="projects-section">
+    <h1>Projects</h1>
 
     <div class="projects">
-      <h1>Projects</h1>
-      <p>Some of my recent projects are</p>
-      <div class="projecttemplates">
-        <div class="project1">
-          <div class="project1image">
-            <img src="Screenshot 2025-08-28 777.png" alt="picture">
-          </div>
-          <div class="projectcontent">
-            <h3>Business Card</h3>
-            <p>I created a business card using HTML, CSS which showcase my skills and projects.</p>
-          </div>
+      <div class="project1">
+        <div class="projectimage">
+          <img src="assets/Screenshot 2025-08-28 777.png" alt="picture">
         </div>
-
-        <div class="project2">
-          <div class="project2image">
-            <img src="the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg" alt="">
-          </div>
-          <div class="projectcontent">
-            <h3> Netflix Clone</h3>
-            <p>I created a responsive Netflix Clone Frontend part</p>
-          </div>
+        <div class="projectcontent">
+          <h3>Business Card</h3>
+          <p>I created a business card using HTML, CSS which showcase my skills and projects.</p>
         </div>
-
       </div>
+
+      <div class="project2">
+        <div class="projectimage">
+          <img src="assets/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg" alt="">
+        </div>
+        <div class="projectcontent">
+          <h3> Netflix Clone</h3>
+          <p>I created a responsive Netflix Clone Frontend part</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section> -->
+
+  <!------------------contact section ---------------->
+
+  <section id="contact">
+    <h1>Contact Me</h1>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="contact">Phone Number</label>
+          <input type="tel" id="contact" name="contact" placeholder="+91123456789" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Anything you want to communicate..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+
     </div>
 
-    <div class="contactme">
-      <div id="contact-form">
-        <form class="contact-form">
-          <h2>Contact Me</h2>
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-          </div>
-          <div class="form-group">
-            <label for="contact">Contact Number</label>
-            <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
-          </div>
-          <div class="form-group">
-            <label for="address">Address</label>
-            <input type="text" id="address" name="address" placeholder="Enter your address" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
-          </div>
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-      </div>
-    </div>
-
-  </main>
+  </section>
 
   <footer>
     <div class="foot">
-      <h2>Created by vaibhav khugshal</h2>
+      <div class="item">
+        <h2>Vaibhav Khugshal's Portfolio</h2>
+        <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
+      </div>
+
+      <div class="item">
+        <h2>Quick Links</h2>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills-section">Skills</a>
+        <!-- <a href="">Projects</a> -->
+      </div>
+
+      <div class="item">
+        <h2>Contact Info</h2>
+
+        <p>Email:</p>
+        <a href="mailto:vaibhavkhugshal010@gmail.com">
+          vaibhavkhugshal010@gmail.com
+        </a>
+
+        <p>Dehradun, Uttarakhand</p>
+      </div>
+      
     </div>
   </footer>
 
