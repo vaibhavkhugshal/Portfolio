@@ -55,7 +55,7 @@
             
             <div class="button">
               <a href="#about" class="btn" >Explore More </a>
-              <a href="#resume" download class="btn">Resume</a>
+              <a href="assets/Vaibhav Khugshal Resume.pdf" target="_blank" class="btn">Resume</a>
             </div>
           </div>
         </div>
@@ -225,7 +225,7 @@
         </div>
         <div class="form-group">
           <label for="contact">Phone Number</label>
-          <input type="tel" id="contact" name="contact" placeholder="+91123456789" required>
+          <input type="tel" id="contact" name="contact" placeholder="10 Digit Contact Number"  pattern="^[0-9]{10}$" required>
         </div>
         <div class="form-group">
           <label for="message">Message</label>
@@ -258,15 +258,19 @@
         <h2>Contact Info</h2>
 
         <p>Email:</p>
-        <a href="mailto:vaibhavkhugshal010@gmail.com">
-          vaibhavkhugshal010@gmail.com
-        </a>
+          <a href="mailto:vaibhavkhugshal010@gmail.com">
+            vaibhavkhugshal010@gmail.com
+          </a>
+        
 
         <p>Dehradun, Uttarakhand</p>
       </div>
       
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="port.js"></script>
 
 
 </body>
